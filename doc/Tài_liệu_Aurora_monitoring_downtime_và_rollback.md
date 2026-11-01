@@ -7,7 +7,7 @@ Thực hiện các truy vấn kiểm tra cơ sở dữ liệu Sakila sau restore
 Các bảng kiểm tra bao gồm:
 
 | Bảng | Số bản ghi |
-|---|---:|
+|---|:-:|
 | actor | 200 |
 | film | 1000 |
 | customer | 599 |
@@ -18,7 +18,7 @@ Các bảng kiểm tra bao gồm:
 Thực hiện kiểm tra bằng câu lệnh `COUNT(*)` trên 16 bảng của cơ sở dữ liệu Sakila.
 
 | Nội dung | Kết quả |
-|---|---|
+|---|:-:|
 | Số bảng được đối chiếu | 16 |
 | Số bảng trùng số bản ghi | 16 |
 | Số bảng khác biệt | 0 |
@@ -36,7 +36,7 @@ Kết quả restore được ghi nhận trong lần thử đầu:
 Kết quả đo quy trình migration mô phỏng:
 
 | Giai đoạn | Thời gian |
-|---|---:|
+|---|:-:|
 | Chuẩn bị backup từ S3 | 55 giây |
 | Restore phase | 139 giây |
 | Validation | 19 giây |
@@ -50,7 +50,7 @@ Thực hiện kiểm thử Rollback Plan theo phương pháp `PRE_CUTOVER_SIMULA
 Trong quá trình kiểm thử, MySQL nguồn trên EC2 tiếp tục hoạt động và có thể phục vụ các truy vấn dữ liệu khi quá trình migration bị hủy trước cutover.
 
 | Nội dung | Kết quả |
-|---|---|
+|---|:-:|
 | SOURCE_CONNECTION | PASS |
 | SOURCE_TABLE_COUNT | 16 |
 | SOURCE_DATA_CHECK | PASS |
